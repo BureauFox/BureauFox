@@ -1,8 +1,4 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  images: {
-    unoptimized: true,
-  },
-}
+/* DEPRECATED: next.config.mjs replaced by next.config.js (CommonJS)
+   Keep this file only for reference. The project now uses next.config.js
+*/
 
-export default nextConfig

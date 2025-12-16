@@ -1,8 +1,8 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @custom-variant dark (&:is(.dark *));
 
-@theme {
+:root {
   --container-screen-xl: 75rem;
   --container-screen-2xl: 83.75rem;
 
@@ -52,14 +52,6 @@
   --background-image-faq-bg: url('/images/faq/swirl.png');
 }
 
-/*
-  The default border color has changed to `currentcolor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
 @layer base {
   *,
   ::after,
@@ -70,31 +62,44 @@
   }
 
   section {
-    @apply py-20;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   h1 {
-    @apply text-black text-6xl sm:text-80 font-bold sm:leading-24 leading-20;
+    color: #000;
+    font-size: 3.75rem;
+    font-weight: 700;
+    line-height: 1.2;
   }
 
   h2 {
-    @apply text-black text-5xl lg:text-65 font-bold;
+    color: #000;
+    font-size: 3rem;
+    font-weight: 700;
   }
 
   h3 {
-    @apply text-black text-4xl lg:text-6xl font-semibold;
+    color: #000;
+    font-size: 2.25rem;
+    font-weight: 600;
   }
 
   h4 {
-    @apply text-black text-3xl lg:text-4xl font-semibold;
+    color: #000;
+    font-size: 1.875rem;
+    font-weight: 600;
   }
 
   h5 {
-    @apply text-black text-2xl font-semibold;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 600;
   }
 
   h6 {
-    @apply text-black text-xl;
+    color: #000;
+    font-size: 1.25rem;
   }
 }
 
